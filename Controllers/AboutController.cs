@@ -10,7 +10,7 @@ namespace Fisher.Bookstore.Controllers
     public class AboutController : Controller{
         public IActionResult Index()
         {
-            return Content("About Page");
+            return View();
         }
         public IActionResult History()
         {

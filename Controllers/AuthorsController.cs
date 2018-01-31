@@ -10,11 +10,11 @@ namespace Fisher.Bookstore.Controllers
     public class AuthorsController : Controller{
         public IActionResult Index()
         {
-            return Content("Authors");
+            return View();
         }
         public IActionResult Featured()
         {
-            return Content("Featured Authors");
+            return View();
         }
     }
 }
