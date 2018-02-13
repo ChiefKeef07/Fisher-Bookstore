@@ -1,6 +1,6 @@
 @page
 @using Fisher.Bookstore.Pages
-@model Fisher.Bookstore.Models.Books
+@model Books
 
 @{
     ViewData["Title"] = "Books page";
@@ -19,7 +19,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var book in Model.Books)
+                @foreach (var book in Model.books)
                 {
                     <tr>
                         <td>@book.Title</td>
@@ -29,4 +29,4 @@
             </tbody>
         </table>
     </div>
-</div>>
+</div>

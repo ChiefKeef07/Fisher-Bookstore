@@ -8,6 +8,8 @@ namespace Fisher.Bookstore.Pages
     public class Books : PageModel{
         public List<Book> books {get;set;}
         public void OnGet(){
+            books = new List<Book>();
+
             books.Add(new Book(){
                 Title = "Continuous Delivery",
                 Author = new Author() { Name = "Jez Humble" }
